@@ -67,7 +67,7 @@ Remind yourself how tic-tac-toe works by playing a few games with a classmate.
 
 * When the jQuery selector returns an "array" of elements, it's actually giving us a special jQuery collection. Use the  [`.eq`](https://api.jquery.com/eq/) method with regular array indices to get the jQuery elements out of the collection:
 
-   ```
+   ```js
    var paragraphs = $('p');
    var firstParagraph = paragraphs.eq(0); // returns a jQuery element (so jQuery functions work on it)
    var vanillaVersion = paragraphs[0]; // returns the JavaScript version of the element (most jQuery functions won't work on it)
