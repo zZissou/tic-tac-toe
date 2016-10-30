@@ -56,7 +56,7 @@ $(document).ready(function() {
     });
 
   //declaring winning combinations
-  var winRow1 = [$('#box1').text(), $('#box2').text(), $('#box3').text()];
+  var winRow1 = ($('#box1').text() === 'X' && $('#box2').text() === 'X' && $('#box3').text() === 'X')
   var winRow2 = [$('#box4').text(), $('#box5').text(), $('#box6').text()];
   var winRow3 = [$('#box7').text(), $('#box8').text(), $('#box9').text()];
   var winCol1 = [$('#box1').text(), $('#box4').text(), $('#box7').text()];
@@ -67,6 +67,9 @@ $(document).ready(function() {
 
   var winner = [, winRow2, winRow3, winCol1, winCol2, winCol3, winDia1, winDia2];
 
+  if winRow1 {
+   alert('X IS THE WINNER!');
+  }
   //trial and error
   //   console.log(winRow1);
   //   if ($(winRow1).inArray === "X", "X", "X") {
