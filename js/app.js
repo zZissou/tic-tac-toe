@@ -5,36 +5,6 @@ $(document).ready(function() {
   $('.btn').click(function() {
     location.reload();
   });
-  // var box1 = $('#box1').click(function() {
-  //   console.log("box 1 clicked")
-  // });
-  // var box1 = $('#box1').click(function() {
-  //   console.log("box 1 clicked");
-  // });
-  // var box2 = $('#box2').click(function() {
-  //   console.log("box 2 clicked");
-  // });
-  // var box3 = $('#box3').click(function() {
-  //   console.log("box 3 clicked");
-  // });
-  // var box4 = $('#box4').click(function() {
-  //   console.log("box 4 clicked");
-  // });
-  // var box5 = $('#box5').click(function() {
-  //   console.log("box 5 clicked");
-  // });
-  // var box6 = $('#box6').click(function() {
-  //   console.log("box 6 clicked");
-  // });
-  // var box7 = $('#box7').click(function() {
-  //   console.log("box 7 clicked");
-  // });
-  // var box8 = $('#box8').click(function() {
-  //   console.log("box 8 clicked");
-  // });
-  // var box9 = $('#box9').click(function() {
-  //   console.log("box 9 was clicked");
-  // });
 
   //pair programming team: Kyle Russell & Kevin Tran
   var gameCounter = 0;
@@ -88,4 +58,21 @@ $(document).ready(function() {
     } else {
     }
   });
+
+  var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+
+$(document).keydown(function(e) {
+
+  kkeys.push( e.keyCode );
+
+  if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+
+    $(document).unbind('keydown',arguments.callee);
+
+    // do something awesome
+    $('.box').addClass("konami");
+
+  }
+
+});
 });

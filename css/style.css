@@ -1,7 +1,12 @@
 #board {
   margin-top: 10px;
 }
-
+.konami {
+  background-image:url('../images/giphy.gif');
+  color: blue;
+  background-size: cover;
+  background-position: center;
+}
 .box {
   border: 1px solid white;
   height: 150px;
