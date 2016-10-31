@@ -3,9 +3,18 @@
 }
 
 .box {
-  border: 1px solid black;
+  border: 1px solid white;
   height: 150px;
 }
 
 body {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 10em;
+  text-align: center;
+}
+
+input {
+  margin-top: 1em;
 }
