@@ -71,8 +71,5 @@ $(document).keydown(function(e) {
 
     // do something awesome
     $('.box').addClass("konami");
-
   }
-
-});
 });
